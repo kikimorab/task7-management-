@@ -7,7 +7,7 @@
 
 <ol>
   <li>Склонируйте репозиторий:<br>
-    <code>git clone https://github.com/kikimorab/event-management.git</code></li>
+    <code>git clone https://github.com/kikimorab/task7-management.git</code></li>
   <li>Перейдите в директорию проекта:<br>
     <code>cd event-management</code></li>
   <li>Установите зависимости:<br>
