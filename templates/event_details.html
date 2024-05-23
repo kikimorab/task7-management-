@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ event.title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>{{ event.title }}</h1>
+    <p>Дата: {{ event.date }}</p>
+    <p>Время: {{ event.time }}</p>
+    <p>Место проведения: {{ event.location }}</p>
+    <p>Доступно билетов: {{ event.available_tickets }}</p>
+
+    <form method="post" action="/register/{{ event.id }}">
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+
+    <p><a href="/">Назад к списку мероприятий</a></p>
+</body>
+</html>
